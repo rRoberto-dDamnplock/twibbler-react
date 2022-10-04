@@ -1,0 +1,24 @@
+.activities_container {
+    display: flex;
+}
+
+.activities_box {
+    padding: .5rem .5rem;
+    background-color:  #AAB8C2
+    ;
+    height: 20%;
+    width: 20%;
+    text-align: left;
+    margin: .5rem .5rem;
+    border-radius: 10px;
+}
+
+.activities_box > h3 {
+    color: #657786;
+    margin-left:.8rem ;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 200px;
+  }
