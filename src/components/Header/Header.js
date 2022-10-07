@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginActions } from "../../store/login-slice";
 import { userActions } from "../../store/user-slice";
+import { Link, useRouteMatch  } from "react-router-dom";
+
 
 export default function Header() {
   const nameInputRef = useRef();
@@ -85,6 +87,8 @@ e.preventDefault()
 setIsShowPostModal(prevPostModal => !prevPostModal);
   }
 
+  const match = useRouteMatch()
+
   return (
     <>
       <div className={classes.header}>
@@ -127,12 +131,12 @@ setIsShowPostModal(prevPostModal => !prevPostModal);
           />
         )}
 
-        <h1>Twibbler</h1>
-        <h3>What is new</h3>
+        <Link to='/home' style={{ textDecoration: 'none' }}><h1>Twibbler</h1></Link>
+        <Link to='/home/whats-new' style={{ textDecoration: 'none' }}><h3>What is new</h3></Link>
         {logged ? (
           <h3 onClick={makeAPostClickHandler}>Make a post</h3>
         ) : (
-          <h3 onClick={accountClickHandler}>Account</h3>
+          <h3 onClick={accountClickHandler} >Account</h3>
         )}
 
         {logged && (

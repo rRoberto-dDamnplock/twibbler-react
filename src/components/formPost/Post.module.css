@@ -8,7 +8,7 @@ padding: .5rem 1rem;
     width: 35rem;
     text-align: left;
     background-color:   #F5F8FA;
-    margin-top: 4rem;
+    /* margin-top: .2rem; */
 }
 
 .form > label {
@@ -30,3 +30,9 @@ h1 {
     font-size: inherit;
     padding: 1px 6px;
   }
+
+  .post_button {
+    margin: .5rem 0;
+    height: 2rem;
+    width: 6rem;
+}
