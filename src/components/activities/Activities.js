@@ -7,6 +7,8 @@ export default function Activities() {
     <div className={classes.activities_box}>
         <h2>Today's activities</h2>
         <h3>Groups</h3>
+       
+
         
         
     </div>

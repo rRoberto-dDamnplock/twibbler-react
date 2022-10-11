@@ -1,0 +1,10 @@
+.post_card {
+    display: flex ;
+    flex-direction: column;
+    text-align: left;
+    padding: .5rem 2rem;
+    background-color: #657786;
+    width: 70%;
+    margin: .5rem 2rem;
+    
+}

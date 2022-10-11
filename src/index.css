@@ -7,7 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  margin: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: left  ;
+  gap: 1rem
+}
+
+li {
+  list-style: none;
 }

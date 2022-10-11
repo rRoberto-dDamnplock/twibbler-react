@@ -1,3 +1,7 @@
-/* .wn {
-    margin-top: 4rem;
-} */
+.wn {
+    margin: 1rem 2rem;
+}
+
+.wn > h1 {
+    text-align: left;
+}
